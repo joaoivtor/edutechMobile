@@ -1,0 +1,70 @@
+body{
+	background: rgb(202,202,202);
+}
+
+#tudo{
+	left: 300px;
+    position: absolute;
+}
+
+.teste{
+	position: fixed;
+	font-size: 100px;
+	background: white;
+	border: none;
+
+}
+
+#teste1{
+	padding: 5px 68px;
+	top: 50px;
+	left: 321px;
+}
+
+#teste2{
+	padding: 5px 68px;
+	top: 50px;
+	left: 462px;
+}
+
+#teste3{
+	padding: 5px 68px;
+	top: 50px;
+	left: 605px;
+}
+
+#teste4{
+	padding: 5px 68px;
+	top: 181px;
+	left: 321px;
+}
+
+#teste5{
+	padding: 5px 68px;
+	top: 181px;
+	left: 462px;
+}
+
+#teste6{
+	padding: 5px 68px;
+	top: 181px;
+	left: 605px;
+}
+
+#teste7{
+	padding: 1px 68px;
+	top: 313px;
+	left: 321px;
+}
+
+#teste8{
+	padding: 1px 68px;
+	top: 313px;
+	left: 462px;
+}
+
+#teste9{
+	padding: 1px 68px;
+	top: 313px;
+	left: 605px;
+}
