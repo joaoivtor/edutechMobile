@@ -19,9 +19,9 @@
             <input type="button"/ id = "teste8" class = "teste">
             <input type="button"/ id = "teste9" class = "teste">
         </div>
-    
-</div>
+    <img src="jogo_da_velha.png">
 
+</div>
 
 <script>
 
@@ -34,11 +34,14 @@
     var b7 = document.getElementById('teste7');
     var b8 = document.getElementById('teste8');
     var b9 = document.getElementById('teste9');
-
     var simbolo = "X";
 
     function mostraB1(){
         if(b1.value == ""){
+
+            b1.style.padding = "0px";
+            b1.style.left = "360px";
+
 
             if(simbolo == "X"){
 
@@ -56,6 +59,9 @@
     function mostraB2(){
         if(b2.value == ""){
 
+            b2.style.padding = "0px";
+            b2.style.left = "497px";
+
             if(simbolo == "X"){
 
                 b2.value = "X";
@@ -71,6 +77,9 @@
 
     function mostraB3(){
         if(b3.value == ""){
+
+            b3.style.padding = "0px";
+            b3.style.left = "640px";
 
             if(simbolo == "X"){
 
@@ -88,6 +97,9 @@
     function mostraB4(){
         if(b4.value == ""){
 
+            b4.style.padding = "0px";
+            b4.style.left = "360px";
+
             if(simbolo == "X"){
 
                 b4.value = "X";
@@ -103,6 +115,9 @@
 
     function mostraB5(){
         if(b5.value == ""){
+
+            b5.style.padding = "0px";
+            b5.style.left = "497px";
 
             if(simbolo == "X"){
 
@@ -120,6 +135,9 @@
     function mostraB6(){
         if(b6.value == ""){
 
+            b6.style.padding = "0px";
+            b6.style.left = "640px";
+
             if(simbolo == "X"){
 
                 b6.value = "X";
@@ -136,6 +154,9 @@
     function mostraB7(){
         if(b7.value == ""){
 
+            b7.style.padding = "0px";
+            b7.style.left = "360px";
+
             if(simbolo == "X"){
 
                 b7.value = "X";
@@ -150,6 +171,10 @@
     }
 
     function mostraB8(){
+
+        b8.style.padding = "0px";
+        b8.style.left = "497px";
+
         if(b8.value == ""){
 
             if(simbolo == "X"){
@@ -168,6 +193,9 @@
     function mostraB9(){
         if(b9.value == ""){
 
+            b9.style.padding = "0px";
+            b9.style.left = "640px";
+
             if(simbolo == "X"){
 
                 b9.value = "X";
@@ -184,14 +212,40 @@
     function limpa(){
 
         b1.value = "";
+            b1.style.padding = "5px 68px";
+            b1.style.left = "321px";
+
         b2.value = "";
+            b2.style.padding = "5px 68px";
+            b2.style.left = "462px";
+
         b3.value = "";
+            b3.style.padding = "5px 68px";
+            b3.style.left = "605px";
+
         b4.value = "";
+            b4.style.padding = "5px 68px";
+            b4.style.left = "321px";
+
         b5.value = "";
+            b5.style.padding = "5px 68px";
+            b5.style.left = "462px";
+
         b6.value = "";
+            b6.style.padding = "5px 68px";
+            b6.style.left = "605px";
+
         b7.value = "";
+            b7.style.padding = "1px 68px";
+            b7.style.left = "321px";
+
         b8.value = "";
+            b8.style.padding = "1px 68px";
+            b8.style.left = "462px";
+
         b9.value = "";
+            b9.style.padding = "1px 68px";
+            b9.style.left = "605px";
     }
 
     function regras(){
@@ -297,6 +351,14 @@
             alert("ola16");
             limpa();
         }
+
+        //empate
+        if(b1.value !== "" && b2.value !== "" && b3.value !== "" && b4.value !== "" && b5.value !== "" && b6.value !== "" && b7.value !== "" && b8.value !== "" && b9.value !== ""){
+
+            alert("Empatou!")
+            limpa();
+        }
+        
     }
 
     b1.onclick = mostraB1;
