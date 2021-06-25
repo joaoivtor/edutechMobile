@@ -2,15 +2,24 @@ body{
 	background: rgb(202,202,202);
 }
 
+
+
 #tudo{
 	left: 300px;
     position: absolute;
 }
 
+#caixa{
+	font-size: 27px;
+    position: fixed;
+    left: 70px;
+    top: 165px;
+}
+
 .teste{
 	position: fixed;
 	font-size: 100px;
-	background: white;
+	background: rgb(202,202,202);
 	border: none;
 
 }
@@ -19,6 +28,7 @@ body{
 	padding: 5px 68px;
 	top: 50px;
 	left: 321px;
+	
 }
 
 #teste2{
