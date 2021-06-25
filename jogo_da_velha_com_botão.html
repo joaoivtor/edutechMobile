@@ -23,6 +23,10 @@
 
 </div>
 
+<div id="caixa">
+
+</div>
+
 <script>
 
     var b1 = document.getElementById('teste1');
@@ -246,120 +250,164 @@
         b9.value = "";
             b9.style.padding = "1px 68px";
             b9.style.left = "605px";
+
+
     }
+
+    
 
     function regras(){
         
         //primeira linha
         if(b1.value == "X" && b2.value == "X" && b3.value == "X"){
             
-            alert("ola1");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
+            
+
         }
 
         if(b1.value == "O" && b2.value == "O" && b3.value == "O"){
             
-            alert("ola2");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //segunda linha
         if(b4.value == "X" && b5.value == "X" && b6.value == "X"){
             
-            alert("ola3");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         if(b4.value == "O" && b5.value == "O" && b6.value == "O"){
             
-            alert("ola4");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //terceira linha
         if(b7.value == "X" && b8.value == "X" && b9.value == "X"){
             
-            alert("ola5");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         if(b7.value == "O" && b8.value == "O" && b9.value == "O"){
             
-            alert("ola6");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //primeira coluna
         if(b1.value == "X" && b4.value == "X" && b7.value == "X"){
             
-            alert("ola7");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         if(b1.value == "O" && b4.value == "O" && b7.value == "O"){
             
-            alert("ola8");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //segunda coluna
         if(b2.value == "X" && b5.value == "X" && b8.value == "X"){
             
-            alert("ola9");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
         if(b2.value == "O" && b5.value == "O" && b8.value == "O"){
             
-            alert("ola10");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //terceira coluna
         if(b3.value == "X" && b6.value == "X" && b9.value == "X"){
             
-            alert("ola11");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         if(b3.value == "O" && b6.value == "O" && b9.value == "O"){
             
-            alert("ola12");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //cruzado b1 a b9
         if(b1.value == "X" && b5.value == "X" && b9.value == "X"){
             
-            alert("ola13");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         if(b1.value == "O" && b5.value == "O" && b9.value == "O"){
             
-            alert("ola14");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //cruzado b3 a b7
         if(b3.value == "X" && b5.value == "X" && b7.value == "X"){
             
-            alert("ola15");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
         if(b3.value == "O" && b5.value == "O" && b7.value == "O"){
             
-            alert("ola16");
+            mostra("Ganhou!");
             limpa();
+            setTimeout(ar, 2000);
         }
 
         //empate
         if(b1.value !== "" && b2.value !== "" && b3.value !== "" && b4.value !== "" && b5.value !== "" && b6.value !== "" && b7.value !== "" && b8.value !== "" && b9.value !== ""){
 
-            alert("Empatou!")
+            mostra("Empatou!");
             limpa();
+
+            setTimeout(ar, 2000);
+            
+            
         }
         
     }
+
+    function ar(){
+
+        Exibir = document.getElementById("caixa").innerHTML = "";
+    }
+
+    var Exibir;
+
+    function mostra(txt){
+
+      Exibir = document.getElementById("caixa").innerHTML = txt;
+    }
+
+
+    var caixa = document.getElementById("caixa");
+
+
+
 
     b1.onclick = mostraB1;
     b2.onclick = mostraB2;
@@ -370,4 +418,6 @@
     b7.onclick = mostraB7;
     b8.onclick = mostraB8;
     b9.onclick = mostraB9;
+    
+
 </script>
