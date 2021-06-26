@@ -2,6 +2,40 @@ body{
 	background: rgb(202,202,202);
 }
 
+#berto{
+	font-size: 40px;
+    left: 95px;
+    top: 50px;
+    position: fixed;
+    text-align: center;
+    width: 172px;
+}
+
+#vento{
+	position: relative;
+    top: 62px;
+    left: 30px;
+
+}
+
+#arnaldo{
+	font-size: 40px;
+    left: 95px;
+    top: 50px;
+    position: fixed;
+    text-align: center;
+    width: 172px;
+}
+
+p1{
+	left: -43px;
+    position: relative;
+}
+
+p2{
+	position: relative;
+    left: 35px;
+}
 
 
 #tudo{
@@ -10,6 +44,13 @@ body{
 }
 
 #caixa{
+	font-size: 27px;
+    position: fixed;
+    left: 70px;
+    top: 165px;
+}
+
+#empatou{
 	font-size: 27px;
     position: fixed;
     left: 70px;

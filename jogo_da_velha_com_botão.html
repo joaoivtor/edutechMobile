@@ -27,6 +27,13 @@
 
 </div>
 
+<div id="empatou">
+    
+</div>
+<div id = "caixaO">
+    
+</div>
+
 <script>
 
     var b1 = document.getElementById('teste1');
@@ -254,157 +261,168 @@
 
     }
 
-    
+    var contadorX = 0
+
+    function ganhouX(){
+        contadorX++;
+        mostraX("<p2>O <br>  " + contadorO + "</p2>");
+        
+        mostraX("<p1> X <br>" + contadorX + "</p1>");
+        
+    }
+
+    var contadorO = 0
+
+    function ganhouO(){
+        contadorO++;
+        mostraO("<p1> X <br>" + contadorX + "</p1>");
+
+        mostraO("<p2>O <br>  " + contadorO + "</p2>");
+    }    
 
     function regras(){
         
         //primeira linha
         if(b1.value == "X" && b2.value == "X" && b3.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();
             limpa();
-            setTimeout(ar, 2000);
+            
             
 
         }
 
         if(b1.value == "O" && b2.value == "O" && b3.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
+            
         }
 
         //segunda linha
         if(b4.value == "X" && b5.value == "X" && b6.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         if(b4.value == "O" && b5.value == "O" && b6.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         //terceira linha
         if(b7.value == "X" && b8.value == "X" && b9.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         if(b7.value == "O" && b8.value == "O" && b9.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         //primeira coluna
         if(b1.value == "X" && b4.value == "X" && b7.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         if(b1.value == "O" && b4.value == "O" && b7.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         //segunda coluna
         if(b2.value == "X" && b5.value == "X" && b8.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();
             limpa();
-            setTimeout(ar, 2000);
         }
+
         if(b2.value == "O" && b5.value == "O" && b8.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         //terceira coluna
         if(b3.value == "X" && b6.value == "X" && b9.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();;
             limpa();
-            setTimeout(ar, 2000);
         }
 
         if(b3.value == "O" && b6.value == "O" && b9.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         //cruzado b1 a b9
         if(b1.value == "X" && b5.value == "X" && b9.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();;
             limpa();
-            setTimeout(ar, 2000);
         }
 
         if(b1.value == "O" && b5.value == "O" && b9.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         //cruzado b3 a b7
         if(b3.value == "X" && b5.value == "X" && b7.value == "X"){
             
-            mostra("Ganhou!");
+            ganhouX();
             limpa();
-            setTimeout(ar, 2000);
         }
         if(b3.value == "O" && b5.value == "O" && b7.value == "O"){
             
-            mostra("Ganhou!");
+            ganhouO();
             limpa();
-            setTimeout(ar, 2000);
         }
 
         //empate
         if(b1.value !== "" && b2.value !== "" && b3.value !== "" && b4.value !== "" && b5.value !== "" && b6.value !== "" && b7.value !== "" && b8.value !== "" && b9.value !== ""){
 
-            mostra("Empatou!");
+            empate("Empatou!");
             limpa();
-
-            setTimeout(ar, 2000);
-            
-            
+            setTimeout(ar, 1000);
         }
         
     }
 
+
     function ar(){
 
-        Exibir = document.getElementById("caixa").innerHTML = "";
+        Exibir = document.getElementById("empatou").innerHTML = "";
+
     }
 
     var Exibir;
 
-    function mostra(txt){
+    function empate(txt){
 
-      Exibir = document.getElementById("caixa").innerHTML = txt;
+        Exibir = document.getElementById("empatou").innerHTML = "<div id = vento>" + txt + "</div>";
+    }
+
+    function mostraX(txt){
+
+      Exibir = document.getElementById("caixa").innerHTML = "<div id = berto>" + txt + "</div>";
     }
 
 
-    var caixa = document.getElementById("caixa");
+    function mostraO(txt){
+
+      Exibir = document.getElementById("caixaO").innerHTML = "<div id = arnaldo>" + txt + "</div>";
+    }
 
 
 
