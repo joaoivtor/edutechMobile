@@ -1,10 +1,11 @@
 
 body{
 	background: rgb(202,202,202);
+    font-family: 'Girasol', cursive;
 }
 
 #carro{
-	width: 452px;
+	width: 460px;
     height: 208px;
     position: relative;
     right: 19px;
@@ -137,6 +138,3 @@ button{
     height: 96px;
 
 }
-
-
-
