@@ -1,10 +1,10 @@
 <meta charset="UTF-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="posicionamento.css">
+    <!--links --> 
+
+
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="posicionamento.css">
+
 
     <div id="carro">
         <h1> Jogo da Velha</h1>
@@ -15,7 +15,6 @@
         <div id = "caixaO">
     
         </div>
-        
         
         <div id= "funfa">
             <img src="jogo_da_velha.png">
@@ -45,7 +44,7 @@
     <div id = "empatou"></div>
     <div id="play"><button id="botaoPlay">Play</button></div>
 
-    <strong>
+   
 
         <script>
 
@@ -223,19 +222,16 @@
 
             function ganhouX(){
                 simbolo = "X";
+
                 contadorX++;
-                mostraX("<p2>O <br>  " + contadorO + "</p2>");
-                
                 mostraX("<p1> X <br>" + contadorX + "</p1>");
-                
             }
 
             var contadorO = 0
 
             function ganhouO(){
-                contadorO++;
-                mostraO("<p1> X <br>" + contadorX + "</p1>");
 
+                contadorO++;
                 mostraO("<p2>O <br>  " + contadorO + "</p2>");
             }    
 
@@ -356,17 +352,6 @@
                 }
                 
             }
-
-            function ar(){
-
-                Exibir = document.getElementById("empatou").innerHTML = "";
-                empatou.style.width = "0";
-                empatou.style.height = "0";
-                empatou.style.left = "0";
-                empatou.style.top = "0";
-
-            }
-
             var Exibir;
 
             function empate(txt){
@@ -377,10 +362,20 @@
                 empatou.style.width = "427px";
                 empatou.style.height = "380px";
                 empatou.style.left = "355px";
-                empatou.style.top = "7px";
+                empatou.style.top = "-59px";
                 empatou.style.background = "#020101";
                 empatou.style.textAlign = "center";
                 
+            }
+
+            function ar(){
+
+                Exibir = document.getElementById("empatou").innerHTML = "";
+                empatou.style.width = "0";
+                empatou.style.height = "0";
+                empatou.style.left = "0";
+                empatou.style.top = "0";
+
             }
 
             function mostraX(txt){
@@ -399,7 +394,7 @@
                 
                     play.style.width = "0";
                     play.style.height = "0";
-                    play.style.left = "0";
+                    play.style.left = "-216px";
                     play.style.top = "0";
                 
             }
@@ -414,5 +409,4 @@
             b7.onclick = mostraB7;
             b8.onclick = mostraB8;
             b9.onclick = mostraB9;
-        </script>
-    </strong>
+    </script>

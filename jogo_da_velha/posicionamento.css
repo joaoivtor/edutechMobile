@@ -1,15 +1,6 @@
 
 body{
 	background: rgb(202,202,202);
-    font-family: 'Zilla Slab', serif;
-}
-
-h1{
-	font-size: 78px;
-    position: relative;
-    left: 363px;
-    top: 10px;
-
 }
 
 #carro{
@@ -19,13 +10,44 @@ h1{
     right: 19px;
 }
 
+h1{
+    font-size: 78px;
+    position: relative;
+    left: 363px;
+    top: 10px;
+
+}
+
+#caixaX{
+    position: relative;
+    left: 220px;
+    top: 49px;
+    text-align: center;
+    display: inline-block;
+    font-size: 38px;
+
+}
+
+
+
+#caixaO{
+    position: relative;
+    left: 257px;
+    top: 49px;
+    text-align: center;
+    display: inline-block;
+    font-size: 38px;
+
+}
+
 #funfa{
 	position: fixed;
     display: inline-block;
     width: 470px;
     height: 458px;
     left: 335px;
-    top: 166px;
+    top: 100px;
+
 }
 
 #tudo{
@@ -36,32 +58,31 @@ h1{
     width: 427px;
 }
 
-#coluna1, #coluna2, #coluna3{
-
-	left: 2px;
-}
-
 #coluna1{
-	display: inline-block;
+    display: inline-block;
     position: relative;
     bottom: -1px;
     width: 452px;
 }
 
 #coluna2{
-	display: inline-block;
+    display: inline-block;
     position: relative;
     bottom: -7px;
     width: 452px;
 }
 
 #coluna3{
-	display: inline-block;
+    display: inline-block;
     position: relative;
     bottom: -14px;;
     width: 452px;
 }
 
+#coluna1, #coluna2, #coluna3{
+
+	left: 2px;
+}
 
 .teste{
 	position: relative;
@@ -71,14 +92,15 @@ h1{
     background: rgb(202,202,202);
     border: none;
     font-size: 120px;
+    
 
 }
 #teste1, #teste4, #teste7{
-	    right: 1px;
+	right: 1px;
 }
 
 #teste3, #teste6, #teste9{
-	width: 143px;
+    width: 143px;
 	left: 2px;
 
 }
@@ -87,27 +109,11 @@ h1{
 	height: 115px;
 }
 
-#caixaX{
+#empatou p3{
+    top: 156px;
     position: relative;
-    left: 498px;
-    top: 17px;
-    text-align: center;
-    display: inline-block;
-    font-size: 38px;
-}
-
-#caixaO{
-	position: relative;
-    left: 608px;
-    top: 17px;
-    text-align: center;
-    display: inline-block;
-    font-size: 38px;
-
-}
-
-#empatou{
-	
+    color: red;
+    font-size: 55px;
 }
 
 #play{
@@ -115,25 +121,22 @@ h1{
     width: 427px;
     height: 380px;
     left: 355px;
-    top: 7px;
+    top: -59px;
     background: rgb(2, 1, 1);
     text-align: center;
-}
-
-p3{
-    top: 156px;
-    position: relative;
-    color: red;
-    font-size: 55px;
 }
 
 button{
     position: relative;
     top: 168px;
     font-size: 66px;
-    background: black;
+    background: rgb(0 8 97);
     color: red;
     border: none;
     width: 200px;
     height: 96px;
+
 }
+
+
+
