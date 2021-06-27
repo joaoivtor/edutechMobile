@@ -1,0 +1,10 @@
+body{
+	background: lightgray;
+
+}
+canvas{
+
+	position: relative;
+	top: 100px;
+	left: 300px;
+}
