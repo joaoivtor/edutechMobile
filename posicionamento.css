@@ -2,120 +2,113 @@ body{
 	background: rgb(202,202,202);
 }
 
-#berto{
-	font-size: 40px;
-    left: 95px;
-    top: 50px;
-    position: fixed;
-    text-align: center;
-    width: 172px;
-}
-
-#vento{
-	position: relative;
-    top: 62px;
-    left: 30px;
-
-}
-
-#arnaldo{
-	font-size: 40px;
-    left: 95px;
-    top: 50px;
-    position: fixed;
-    text-align: center;
-    width: 172px;
-}
-
-p1{
-	left: -43px;
+h1{
+	font-size: 78px;
     position: relative;
+    left: 363px;
+    top: 10px;
+
 }
 
-p2{
+#carro{
+	width: 437px;
+    height: 208px;
+    position: relative;
+    right: 19px;
+}
+
+#funfa{
 	position: relative;
-    left: 35px;
+    display: inline-block;
+    width: 470px;
+    height: 458px;
+    left: 355px;
+    top: 50px;
 }
-
 
 #tudo{
-	left: 300px;
-    position: absolute;
+	position: relative;
+    bottom: 409px;
+    left: 20px;
+    height: 380px;
+    width: 427px;
 }
 
-#caixa{
-	font-size: 27px;
-    position: fixed;
-    left: 70px;
-    top: 165px;
+#coluna1, #coluna2, #coluna3{
+
+	left: 2px;
+}
+
+#coluna1{
+	display: inline-block;
+    position: relative;
+    bottom: -1px;
+    width: 452px;
+}
+
+#coluna2{
+	display: inline-block;
+    position: relative;
+    bottom: -7px;
+    width: 452px;
+}
+
+#coluna3{
+	display: inline-block;
+    position: relative;
+    bottom: -14px;;
+    width: 452px;
+}
+
+
+.teste{
+	position: relative;
+    width: 136px;
+    height: 125px;
+    vertical-align: top;
+    background: rgb(202,202,202);
+    border: none;
+    font-size: 120px;
+
+}
+#teste1, #teste4, #teste7{
+	    right: 1px;
+}
+
+#teste3, #teste6, #teste9{
+	width: 143px;
+	left: 2px;
+
+}
+
+#teste7, #teste8, #teste9{
+	height: 115px;
+}
+
+#caixaX{
+    position: relative;
+    left: 498px;
+    top: 17px;
+    text-align: center;
+    display: inline-block;
+    font-size: 38px;
+}
+
+#caixaO{
+	position: relative;
+    left: 608px;
+    top: 17px;
+    text-align: center;
+    display: inline-block;
+    font-size: 38px;
+
 }
 
 #empatou{
-	font-size: 27px;
-    position: fixed;
-    left: 70px;
-    top: 165px;
-}
-
-.teste{
 	position: fixed;
-	font-size: 100px;
-	background: rgb(202,202,202);
-	border: none;
-
+    bottom: 246px;
+    right: 610px;
+    font-size: 27px;
+    display: inline-block;
 }
 
-#teste1{
-	padding: 5px 68px;
-	top: 50px;
-	left: 321px;
-	
-}
-
-#teste2{
-	padding: 5px 68px;
-	top: 50px;
-	left: 462px;
-}
-
-#teste3{
-	padding: 5px 68px;
-	top: 50px;
-	left: 605px;
-}
-
-#teste4{
-	padding: 5px 68px;
-	top: 181px;
-	left: 321px;
-}
-
-#teste5{
-	padding: 5px 68px;
-	top: 181px;
-	left: 462px;
-}
-
-#teste6{
-	padding: 5px 68px;
-	top: 181px;
-	left: 605px;
-}
-
-#teste7{
-	padding: 1px 68px;
-	top: 313px;
-	left: 321px;
-}
-
-#teste8{
-	padding: 1px 68px;
-	top: 313px;
-	left: 462px;
-}
-
-#teste9{
-	padding: 1px 68px;
-	top: 313px;
-	left: 605px;
-}

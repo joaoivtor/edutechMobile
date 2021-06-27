@@ -2,37 +2,48 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="posicionamento.css">
-<div id = "tudo">
+    <div id="carro">
+        <h1> Jogo da Velha</h1>
+
+        <div id="caixaX">
+
+                </div>
+
+                <div id="empatou">
+                    
+                </div>
+                <div id = "caixaO">
     
-        <div id = "coluna1">
-            <input type="button"/ id = "teste1" class = "teste">
-            <input type="button"/ id = "teste2" class = "teste">
-            <input type="button"/ id = "teste3" class = "teste">
+                </div>
+        
+        <div id= "funfa">
+            <img src="jogo_da_velha.png">
+
+            <div id = "tudo">
+        
+                <div id = "coluna1">
+                    <input type="button"/ id = "teste1" class = "teste">
+                    <input type="button"/ id = "teste2" class = "teste">
+                    <input type="button"/ id = "teste3" class = "teste">
+                </div>
+                <div id = "coluna2">
+                    <input type="button"/ id = "teste4" class = "teste">
+                    <input type="button"/ id = "teste5" class = "teste">
+                    <input type="button"/ id = "teste6" class = "teste">
+                </div>
+                <div id = "coluna3">
+                    <input type="button"/ id = "teste7" class = "teste">
+                    <input type="button"/ id = "teste8" class = "teste">
+                    <input type="button"/ id = "teste9" class = "teste">
+                </div>
+                
+            </div>
         </div>
-        <div id = "coluna2">
-            <input type="button"/ id = "teste4" class = "teste">
-            <input type="button"/ id = "teste5" class = "teste">
-            <input type="button"/ id = "teste6" class = "teste">
-        </div>
-        <div id = "coluna3">
-            <input type="button"/ id = "teste7" class = "teste">
-            <input type="button"/ id = "teste8" class = "teste">
-            <input type="button"/ id = "teste9" class = "teste">
-        </div>
-    <img src="jogo_da_velha.png">
+    </div>
 
-</div>
 
-<div id="caixa">
 
-</div>
 
-<div id="empatou">
-    
-</div>
-<div id = "caixaO">
-    
-</div>
 
 <script>
 
@@ -50,10 +61,6 @@
     function mostraB1(){
         if(b1.value == ""){
 
-            b1.style.padding = "0px";
-            b1.style.left = "360px";
-
-
             if(simbolo == "X"){
 
                 b1.value = "X";
@@ -69,9 +76,6 @@
 
     function mostraB2(){
         if(b2.value == ""){
-
-            b2.style.padding = "0px";
-            b2.style.left = "497px";
 
             if(simbolo == "X"){
 
@@ -89,9 +93,6 @@
     function mostraB3(){
         if(b3.value == ""){
 
-            b3.style.padding = "0px";
-            b3.style.left = "640px";
-
             if(simbolo == "X"){
 
                 b3.value = "X";
@@ -107,9 +108,6 @@
 
     function mostraB4(){
         if(b4.value == ""){
-
-            b4.style.padding = "0px";
-            b4.style.left = "360px";
 
             if(simbolo == "X"){
 
@@ -127,9 +125,6 @@
     function mostraB5(){
         if(b5.value == ""){
 
-            b5.style.padding = "0px";
-            b5.style.left = "497px";
-
             if(simbolo == "X"){
 
                 b5.value = "X";
@@ -145,9 +140,6 @@
 
     function mostraB6(){
         if(b6.value == ""){
-
-            b6.style.padding = "0px";
-            b6.style.left = "640px";
 
             if(simbolo == "X"){
 
@@ -165,9 +157,6 @@
     function mostraB7(){
         if(b7.value == ""){
 
-            b7.style.padding = "0px";
-            b7.style.left = "360px";
-
             if(simbolo == "X"){
 
                 b7.value = "X";
@@ -182,9 +171,6 @@
     }
 
     function mostraB8(){
-
-        b8.style.padding = "0px";
-        b8.style.left = "497px";
 
         if(b8.value == ""){
 
@@ -204,9 +190,6 @@
     function mostraB9(){
         if(b9.value == ""){
 
-            b9.style.padding = "0px";
-            b9.style.left = "640px";
-
             if(simbolo == "X"){
 
                 b9.value = "X";
@@ -223,47 +206,20 @@
     function limpa(){
 
         b1.value = "";
-            b1.style.padding = "5px 68px";
-            b1.style.left = "321px";
-
         b2.value = "";
-            b2.style.padding = "5px 68px";
-            b2.style.left = "462px";
-
         b3.value = "";
-            b3.style.padding = "5px 68px";
-            b3.style.left = "605px";
-
         b4.value = "";
-            b4.style.padding = "5px 68px";
-            b4.style.left = "321px";
-
         b5.value = "";
-            b5.style.padding = "5px 68px";
-            b5.style.left = "462px";
-
         b6.value = "";
-            b6.style.padding = "5px 68px";
-            b6.style.left = "605px";
-
         b7.value = "";
-            b7.style.padding = "1px 68px";
-            b7.style.left = "321px";
-
         b8.value = "";
-            b8.style.padding = "1px 68px";
-            b8.style.left = "462px";
-
         b9.value = "";
-            b9.style.padding = "1px 68px";
-            b9.style.left = "605px";
-
-
     }
 
     var contadorX = 0
 
     function ganhouX(){
+        simbolo = "X";
         contadorX++;
         mostraX("<p2>O <br>  " + contadorO + "</p2>");
         
@@ -287,7 +243,7 @@
             
             ganhouX();
             limpa();
-            
+            var simbolo = "X";
             
 
         }
@@ -296,7 +252,6 @@
             
             ganhouO();
             limpa();
-            
         }
 
         //segunda linha
@@ -354,7 +309,7 @@
         //terceira coluna
         if(b3.value == "X" && b6.value == "X" && b9.value == "X"){
             
-            ganhouX();;
+            ganhouX();
             limpa();
         }
 
@@ -415,7 +370,7 @@
 
     function mostraX(txt){
 
-      Exibir = document.getElementById("caixa").innerHTML = "<div id = berto>" + txt + "</div>";
+      Exibir = document.getElementById("caixaX").innerHTML = "<div id = berto>" + txt + "</div>";
     }
 
 
@@ -423,9 +378,6 @@
 
       Exibir = document.getElementById("caixaO").innerHTML = "<div id = arnaldo>" + txt + "</div>";
     }
-
-
-
 
     b1.onclick = mostraB1;
     b2.onclick = mostraB2;
@@ -436,6 +388,4 @@
     b7.onclick = mostraB7;
     b8.onclick = mostraB8;
     b9.onclick = mostraB9;
-    
-
 </script>
