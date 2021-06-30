@@ -1,0 +1,107 @@
+<canvas width="600" height="400"></canvas>
+<script>
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	pincel.fillStyle = "lightgray"
+	pincel.fillRect(0,0,600,400)
+
+	function criaCirculo(){
+
+		pincel.fillStyle = "black";
+		pincel.beginPath();
+		pincel.arc(x,y,10,0,2*Math.PI);
+		pincel.fill();
+	}
+
+	var esquerda = 37;
+    var direita = 39;
+    
+	
+	var sentidoX = -1;
+	var sentidoY = -1;
+
+	function positivoX(){
+		if(x  <= 10){
+			sentidoX = +1;
+			y = y - 1;
+		}
+		if(x >= 590){
+			sentidoX = -1;
+			y = y + 1;
+		}
+		 x = x + sentidoX;
+		 y = y;
+	}
+
+	function positivoY() {
+		if(y <= 10){
+			sentidoY = +1;
+			x = x - 1;
+		}
+		if(y >= 390){
+			alert("Você perdeu!");
+		}
+
+		if(x >= xa && x <= xa+60 && y >= ya-10 && y <= ya+10){
+			sentidoY = -1
+		}
+
+
+
+		 y = y + sentidoY;
+		 x = x;
+
+	}
+	
+	
+	function jogo(){
+		pincel.clearRect(0,0,600,400);
+		pincel.fillStyle = "lightgray"
+	pincel.fillRect(0,0,600,400)
+
+		criaCirculo()
+
+		positivoX()
+		positivoY()
+		plataforma(xa,ya)
+
+
+
+
+		
+
+	}
+
+	function plataforma(xa) {
+
+        pincel.fillStyle = 'blue';
+        pincel.fillRect(xa,ya,60,10)
+        if(xa <= 60){
+        	taxa
+        }
+    }
+    var taxa = 10;
+
+	function leDoTeclado(evento) {
+        
+        if(evento.keyCode == esquerda && xa >= 10){
+            xa = xa-taxa;
+             
+        	
+        
+        }else if(evento.keyCode == direita && xa <= 530){
+            xa = xa+taxa;
+        }
+    }
+
+   
+   	var xa = 300 
+   	var ya = 380
+	var x = 200
+	var y = 300
+
+	setInterval(jogo, 10)
+	document.onkeydown = leDoTeclado;
+
+</script>
