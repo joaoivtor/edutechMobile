@@ -1,0 +1,104 @@
+body{
+    background: rgb(202,202,202);
+    font-family: 'Girasol', cursive;
+}
+
+#tudo{
+    position: relative;
+    width: 480px;
+    margin: 0 auto;
+}
+
+#complemento{
+    position: relative;
+    top: 25px;
+    height: 538px;
+}
+
+h1{
+    font-size: 70px;
+    padding-bottom: 15px;
+}
+
+#caixaX {
+    left: -119px;
+}
+
+#caixaO {
+    left: -60px;
+}
+
+#caixaX, #caixaO{
+    position: absolute;
+    top: 132px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#todosBotao {
+    position: absolute;
+    top: 127px;
+}
+
+.botao{
+    position: relative;
+    top: 4px;
+    left: 20px;
+    width: 137px;
+    height: 126px;
+    margin: 3px 0;
+    vertical-align: top;
+    font-size: 114px;
+    font-weight: 500;
+    background: #cacaca;
+    border: none;
+}
+
+#botao3, #botao6, #botao9{
+    width:  142px;
+}
+
+#botao7, #botao8, #botao9{
+    height: 116px;
+}
+
+#play {
+    position: absolute;
+    top: 131px;
+    left: 17px;
+    width: 431px;
+    height: 386px;
+    background: #020101;
+    text-align: center;
+}
+#botaoPlay{
+    position: relative;
+    top: 156px;
+    width: 207px;
+    height: 76px;
+    color: red;
+    background: #090454;
+    border: none;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+#empatou {
+    position: absolute;
+    top: 131px;
+    left: 17px;
+    width: 431px;
+    height: 386px;
+    background: #020101;
+    text-align: center;
+    display: none;
+}
+
+#empatou p3 {
+    position: relative;
+    top: 156px;
+    color: red;
+    font-size: 55px;
+}
+
