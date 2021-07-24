@@ -1,0 +1,146 @@
+
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+    
+
+    function personagem(){
+        pincel.fillStyle = "blue";
+        pincel.fillRect(px,py,pw,ph);
+    }
+
+    function desenhaQuadrado(){
+        pincel.fillStyle = "red";
+        pincel.fillRect(x,y,pw,ph);
+    }
+
+    function andressa(){
+        pincel.clearRect(0,0,600,400);
+        pincel.fillStyle = "lightgray";
+        pincel.fillRect(0,0,600,400);
+        desenhaQuadrado();
+        personagem();
+        moverP();
+        
+
+    }
+
+
+    
+    var x = 150;
+    var y = 200;
+    let px = py = 50;
+    let pw = ph = 50;
+    let vel = 3;
+    
+    setInterval(andressa, 10);
+
+    
+
+    addEventListener("keydown", moverPersoDOWN);
+    addEventListener("keyup", moverPersoUP);
+
+    let LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40;
+    let mvl = mvu = mvr = mvd = false;
+
+    function moverP() {
+
+        //direita pra esquerda
+
+        if (mvl && px > 0) {  
+            px -= vel;
+                
+            if(px <x + pw && px > x
+            && py >y -ph && py< y + ph){
+                px += vel;
+                x -= vel;
+
+            }
+            
+        }
+
+        // de baixo pra cima
+
+        if (mvu && py > 0) {
+             py -= vel;
+            
+            if(px >x - pw && px < x +pw
+            && py >y - ph && py< y + ph){
+                py += vel;
+                y -= vel;
+            }
+
+        }
+
+        //da esquerda pra direita
+
+        if (mvr && px < 600 - ph) {
+                px += vel;
+
+            if(px >x - pw && px < x
+            && py >y - ph && py< y + ph){
+                px -= vel;
+                x += vel;
+            }
+            
+        }
+        if (mvd && py < 400 - pw) {
+            py += vel;
+
+            if(px >x - pw && px < x + pw
+            && py >y - ph && py < y){
+                py -= vel;
+                y += vel;
+            }
+        }
+    }
+
+
+
+
+    function moverPersoDOWN(e) {
+        const key = e.keyCode;
+
+        switch (key) {
+            case LEFT:
+                mvl = true
+                break;
+            case UP:
+                mvu = true
+                break;
+            case RIGHT:
+                mvr = true
+                break;
+            case DOWN:
+                mvd = true
+                break;
+
+            default:
+        }
+    }
+
+    function moverPersoUP(e) {
+        const key = e.keyCode;
+
+        switch (key) {
+            case LEFT:
+                mvl = false
+                break;
+            case UP:
+                mvu = false
+                break;
+            case RIGHT:
+                mvr = false
+                break;
+            case DOWN:
+                mvd = false
+                break;
+        }
+    }
+
+
+
+</script>
