@@ -12,29 +12,70 @@
         pincel.fillRect(px,py,pw,ph);
     }
 
-    function desenhaQuadrado(){
+    function desenhaQuadrado(x,y, tamanho){
         pincel.fillStyle = "red";
-        pincel.fillRect(x,y,pw,ph);
+        pincel.fillRect(x,y,tamanho,tamanho);
     }
 
     function andressa(){
         pincel.clearRect(0,0,600,400);
         pincel.fillStyle = "lightgray";
         pincel.fillRect(0,0,600,400);
-        desenhaQuadrado();
         personagem();
+        desenhaQuadrado(x, y, pw);
+        desenhaQuadrado(x2, y2, pw)
+        colisao(x, y, pw);
+        colisao(x2, y2, pw);
         moverP();
-        
 
+    }
+    var redus = x
+
+    function colisao(posicaoX, posicaoY, tamanho){
+
+        //direita pra esquerda
+
+        if(px == posicaoX + tamanho 
+            && py >posicaoY -tamanho && py< posicaoY + tamanho){
+            console.log("ola");
+                x -= vel;
+            
+
+            }
+
+        // //da esquerda pra direita
+
+        if(px == posicaoX - tamanho
+            && py > posicaoY - tamanho && py< posicaoY + tamanho){
+                x += vel;
+            }
+
+        // // // // de baixo pra cima
+
+        if(px >posicaoX - tamanho && px < posicaoX + tamanho
+            && py == posicaoY + tamanho){
+                
+                y -= vel;
+            }
+
+        
+        // // // // de cima pra baixo
+
+        if(px >posicaoX - tamanho && px < posicaoX + tamanho
+            && py == posicaoY - tamanho){
+                
+                y += vel;
+            }
     }
 
 
-    
+    var x2 = 300;
+    var y2 = 200;
     var x = 150;
     var y = 200;
     let px = py = 50;
     let pw = ph = 50;
-    let vel = 3;
+    let vel = 2;
     
     setInterval(andressa, 10);
 
@@ -51,27 +92,15 @@
         //direita pra esquerda
 
         if (mvl && px > 0) {  
-            px -= vel;
-                
-            if(px <x + pw && px > x
-            && py >y -ph && py< y + ph){
-                px += vel;
-                x -= vel;
+            //px -= vel;
+            px -= vel;   
 
-            }
-            
         }
 
         // de baixo pra cima
 
         if (mvu && py > 0) {
-             py -= vel;
-            
-            if(px >x - pw && px < x +pw
-            && py >y - ph && py< y + ph){
-                py += vel;
-                y -= vel;
-            }
+            py -= vel;
 
         }
 
@@ -79,27 +108,13 @@
 
         if (mvr && px < 600 - ph) {
                 px += vel;
-
-            if(px >x - pw && px < x
-            && py >y - ph && py< y + ph){
-                px -= vel;
-                x += vel;
-            }
-            
+  
         }
         if (mvd && py < 400 - pw) {
             py += vel;
 
-            if(px >x - pw && px < x + pw
-            && py >y - ph && py < y){
-                py -= vel;
-                y += vel;
-            }
         }
     }
-
-
-
 
     function moverPersoDOWN(e) {
         const key = e.keyCode;
