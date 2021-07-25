@@ -29,16 +29,25 @@
         moverP();
 
     }
-    var redus = x
+    
+    var x2 = 300;
+    var y2 = 200;
+    var x = 150;
+    var y = 200;
+
+    let px = py = 50;
+    let pw = ph = 50;
+    let vel = 2;
+    
 
     function colisao(posicaoX, posicaoY, tamanho){
-
+        posicaoX = x
         //direita pra esquerda
 
         if(px == posicaoX + tamanho 
-            && py >posicaoY -tamanho && py< posicaoY + tamanho){
+            && py >posicaoY -tamanho && py < posicaoY + tamanho){
             console.log("ola");
-                x -= vel;
+                posicaoX -= vel;
             
 
             }
@@ -69,13 +78,6 @@
     }
 
 
-    var x2 = 300;
-    var y2 = 200;
-    var x = 150;
-    var y = 200;
-    let px = py = 50;
-    let pw = ph = 50;
-    let vel = 2;
     
     setInterval(andressa, 10);
 
