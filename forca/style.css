@@ -1,0 +1,19 @@
+body{
+    background: #757575;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+}
+
+#personagem{
+    background: #555555;
+    width: 600px;
+    height: 200px;
+}
