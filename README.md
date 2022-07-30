@@ -4,4 +4,4 @@
 |2|Do|
 |3|Perfil|
 [](url)
-![youtube](![image](https://user-images.githubusercontent.com/86378145/181938132-83222fe3-c2bd-42de-8dba-23fc1f9bde20.png))
+![youtube](chrome://favicon2/?size=24&scale_factor=1x&show_fallback_monogram=&page_url=https%3A%2F%2Fwww.youtube.com%2F)
